@@ -1,0 +1,215 @@
+
+.form-container {
+  max-width: 400px;
+  margin: 30px auto; /* Add margin from the top */
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    /* background: #e8f0fe; */
+    -webkit-backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
+    color: black;
+    font-size: 16px;
+    /* transition: border-color 0.3s, background-color 0.3s; */
+    background: #e8f0fe;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(25, 25, 25, 0.6);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Add animation for placeholder when input is not empty */
+input:not(:placeholder-shown) + label,
+textarea:not(:placeholder-shown) + label {
+  transform: translateY(-20px);
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Center the form */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* ListComponent.css */
+
+.list-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead {
+  background-color: #007bff;
+  color: #fff;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.delete-btn {
+  margin-left: 5px;
+  background-color: #dc3545;
+  border: none;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100px;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.edit-btn {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100px;
+}
+
+.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Center the list */
+.list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+button[type='submit'] {
+  background-color: #28a745;
+  width: 100px;
+}
+
+button[type='button'] {
+  background-color: #dc3545;
+  width: 100px;
+}
+
+/* Add hover styles for the buttons */
+button:hover {
+  background-color: #0056b3;
+}
+
+button[type='submit']:hover {
+  background-color: #218838;
+  width: 100px;
+}
+
+button[type='button']:hover {
+  background-color: #c82333;
+}
+
+/* EditModal.css */
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  width: 400px;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
