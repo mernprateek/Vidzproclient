@@ -20,7 +20,7 @@ const App = () => {
   // Function to fetch all items
   const fetchItemsData = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/items');
+      const response = await axios.get('https://vast-windbreaker-duck.cyclic.app/api/items');
       setItems(response.data);
     } catch (error) {
       console.error('Failed to fetch items:', error);
@@ -40,7 +40,7 @@ const App = () => {
   // Function to update an existing item
   const updateItem = async (itemId, itemData) => {
     try {
-      await axios.put(`http://localhost:5000/api/items/${itemId}`, itemData);
+      await axios.put(`https://vast-windbreaker-duck.cyclic.app/api/items/${itemId}`, itemData);
       setEditingItem(null);
       fetchItemsData();
     } catch (error) {
@@ -51,7 +51,7 @@ const App = () => {
   // Function to delete an item
   const deleteItem = async (itemId) => {
     try {
-      await axios.delete(`http://localhost:5000/api/items/${itemId}`);
+      await axios.delete(`https://vast-windbreaker-duck.cyclic.app/api/items/${itemId}`);
       fetchItemsData();
     } catch (error) {
       console.error('Failed to delete item:', error);
