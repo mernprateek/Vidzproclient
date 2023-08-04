@@ -30,7 +30,7 @@ const App = () => {
   // Function to add a new item
   const addItem = async (itemData) => {
     try {
-      await axios.post('http://localhost:5000/api/items', itemData);
+      await axios.post('https://vast-windbreaker-duck.cyclic.app/api/items', itemData);
       fetchItemsData();
     } catch (error) {
       console.error('Failed to add item:', error);
